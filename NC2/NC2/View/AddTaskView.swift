@@ -68,6 +68,8 @@ struct AddTaskView: View {
             }
             .onAppear {
                 dataQuadrant = CoreDataManager.shared.getAllQuadrant()
+                taskVM.quadrantSelected = dataQuadrant[3]
+
 //                quadrantVM.getAllQuadrant()
             }
         }.navigationBarItems(
